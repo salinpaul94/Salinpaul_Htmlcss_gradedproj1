@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="labTest.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="inner">
+            <form>
+                <h3>1. Your Contact Details</h3>
+                <div class="form-group">
+                    <input type="text" , placeholder="Full Name" class="form-control">
+                    <input type="text" , placeholder="Patient Id if exists" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" , placeholder="Contact Number" class="form-control">
+                    <input type="email" , placeholder="Email id" class="form-control">
+                </div>
+
+                <h3>2. Address</h3>
+                <div class="form-group">
+                    <input type="text" , placeholder="House Number" class="form-control">
+                    <input type="text" , placeholder="Street" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" , placeholder="Area" class="form-control">
+                </div>
+
+                <h5>District</h5>
+                <div class="form-wrapper">
+                    <select name="District" id="cars" class="form-control">
+                        <option>Choose</option>
+                        <option>Bangalore</option>
+                        <option>Kochi</option>
+                        <option>Chennai</option>
+                    </select>
+                </div>
+
+                <h3>3. Choose the Test Type</h3>
+                <div class="">
+                    <input type="checkbox">
+                    <label for="Test-1"> CBC</label><br>
+                    <input type="checkbox">
+                    <label for="Test-2"> Complete Urine</label><br>
+                    <input type="checkbox">
+                    <label for="Test-3"> Lipid Profile</label><br>
+                    <input type="checkbox">
+                    <label for="Test-4"> Thyroid Stimulating Hormone(TSH)</label><br>
+                    <input type="checkbox">
+                    <label for="Test-5"> Glucose Test</label><br>
+                </div>
+
+                <h3>4. Do you want a hard copy of the report also?</h3>
+                <div class="">
+                    <input type="checkbox">
+                    <label for="Yes"> Yes</label><br>
+                    <input type="checkbox">
+                    <label for="No"> No</label><br>
+                </div>
+
+                <h3>5. Select Your Confortable Date and Time</h3>
+                <div class="form-group">
+                    <label>Date:- </label>
+                    <input type="date">
+                    <label>Time:- </label>
+                    <input type="time">
+                </div>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+            <div class="image-holder">
+                <img src="images/Lab-Test/lab-test.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

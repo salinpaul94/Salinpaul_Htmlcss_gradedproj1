@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    background-color: rgb(180, 151, 151);
+} */
+
+.nav-bar {
+    position: fixed;
+    width: 100%;
+}
+
+.nav-bar h1 {
+    font-size: 50px;
+    color: #fff;
+    background-color: rgb(54, 53, 53);
+    height: 100px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.menu-bar {
+    background-color: rgba(150, 123, 6);
+    text-align: left;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+
+
+
+
+.menu-bar ul li {
+    font-size: 20px;
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.active,
+.menu-bar ul li:hover {
+    background: #191b18;
+    border-radius: 5px;
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background-color: rgba(150, 123, 6);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+    color: rgba(73, 62, 15, 0.6)
+}
+
+.info {
+    width: 70%;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -30%);
+    background-image: url(images/Animation/ani1.jpg);
+    background-size: 100% 100%;
+    z-index: -1;
+    box-shadow: 0 0 0 2px steelblue;
+    animation: slider 15s infinite linear;
+}
+
+@keyframes slider {
+    0% { background-image: url(images/Animation/ani1.jpg);}
+    25% { background-image: url(images/Animation/ani2.png);}
+    50% { background-image: url(images/Animation/ani3.jpg);}
+    75% { background-image: url(images/Animation/ani4.jpg);}
+    100% { background-image: url(images/Animation/ani5.jpg);}
+}
+
+.products {
+    width: 100%;
+    position: absolute;
+    padding-top: 650px;
+    z-index: -1;
+}
+
+.products h1 {
+    padding-left: 40px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.content {
+    width: 20%;
+    height: 400px;
+    margin: 15px;
+    box-sizing: border-box;
+    float: center;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    background-color: goldenrod;
+    box-shadow: 0 14px 28px gray;
+    transition: .4s;
+}
+
+.content:hover {
+    box-shadow: 0 14px 28px rgb(34, 34, 34);
+    width: 25%;
+    height: 450px;
+    transition: .4s
+}
+
+.content h3 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.content img {
+    width: 250px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    border-radius: 20px;
+    transition: .4s
+}
+
+.content img:hover {
+    width: 280px;
+    height: 220px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    transition: .4s
+}
+
+.content h4 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.content button {
+    background-color:gray;
+    color: black;
+    font-size: 20px;
+    border:none; 
+    border-radius:10px; 
+    min-height:30px; 
+    min-width: 200px;
+  }
+
+  .content button:focus {
+    background-color:rgb(250, 234, 230);
+    color: black;
+} 
+
+@media only screen and (max-width:700px){
+
+    .nav-bar h1 {
+        font-size: 20px;
+        color: #fff;
+        background-color: rgb(54, 53, 53);
+        height: 40px;
+        text-align: center;
+    }
+
+    .menu-bar ul {
+        display: grid;
+        list-style: none;
+        color: #fff;
+    }
+
+    .menu-bar ul li {
+        text-align: left;
+        font-size: 20px;
+        width: 100%;
+        margin: 2px;
+        padding: 0px;
+    }
+
+    .gallery {
+        display: grid;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0;
+    }
+
+    .content {
+        width: 90%;
+        height: 400px;
+        margin: 15px;
+        box-sizing: border-box;
+        text-align: center;
+        border-radius: 20px;
+        cursor: pointer;
+        padding-top: 10px;
+        background-color: goldenrod;
+        box-shadow: 0 14px 28px gray;
+    }
+}
